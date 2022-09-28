@@ -1,0 +1,39 @@
+<html>
+<body>
+<script type="text/javascript">
+<!--
+var frecuencia = Number(prompt("Ingrese el valor de la frecuencia ")); 
+var inductancia = Number(prompt("Ingrese el valor de la inductancia ")); 
+var capacitancia = Number(prompt("Ingrese el valor de la capacitancia ")); 
+var dospi= 3.141592 * 2;
+var XL= dospi*frecuencia*inductancia; 
+var XC= 1 / dospi*frecuencia*capacitancia; 
+
+document.write ("<br/> <b> LOS VALORES INGRESADOS SON </b>");
+document.write ("<br/> ");
+document.write ("<br/> <b> La frecuencia es: </b>" +frecuencia);
+document.write ("<br/> ");
+document.write ("<br/> <b> La inductancia es: </b>" +inductancia);
+document.write ("<br/> ");
+document.write ("<br/><b>  La capacitancia es: </b>" +capacitancia);
+document.write ("<br/> ");
+document.write ("<br> <b> El circuito tiende a ser mas... </b> <br/>")
+
+if( XL > XC ){
+ document.write( "<br> <b> INDUCTIVO </b><br/>"); 
+}
+if (XL < XC){
+ document.write (" <br/> <b> CAPACITIVO </b> "); 
+}
+if (XL == XC){
+
+     document.write (" <br/> <b> RESONANTE </b> "); 
+
+}   
+//-->
+</script>
+ <p> Ingresar otros valores para calcular el circuito</p> 
+  <p><a href="../index.html">Volver al index</a></p>
+
+</body>
+</html>
