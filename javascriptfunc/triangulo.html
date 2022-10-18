@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        <!--
+
+        var a;
+        var b;
+        var c;
+
+        function square(x){
+            return x*x
+        }
+
+        function hypotenuse(a, b) {
+            return Math.sqrt(square(a) + square(b));
+        }
+  
+        function perimetro(a,b,c){
+            return a+b+c;
+        }
+
+       function area(a,b){
+            return a*b/2;
+        }
+
+        function resultado(){
+            var p;
+            var z;
+
+            c = hypotenuse(a, b);
+            p = perimetro(a,b,c);
+            z = area(a, b);
+
+            document.write ( "El valor de la hipotenusa es: ",c ); document.write ("<br/>");
+            document.write ( "El valor del perimetro es: ",p); document.write ("<br/>");
+            document.write ( "El valor del area es: ",z ); document.write ("<br/>"); 
+            document.write('<p><a href="../index.html">Volver al index</a></p>');
+            
+        }
+
+        function perdirDatos(){
+            a = Number(prompt("Ingrese el valor del primer lado"))
+            b= Number(prompt("Ingrese el valor del segundo lado"))
+
+            Resultado()
+        }
+
+        //-->
+        </script>
+    </head>
+    <body>
+        <center> <input type="button" onclick="perdirDatos()" value="Call Function"> </center>
+        </form>
+  <p><a href="../index.html">Volver al index</a></p>
+
+
+    </body>
+</html>
