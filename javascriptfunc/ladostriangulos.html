@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        <!--
+
+        var a;
+        var b;
+        var c;
+
+ 
+        function esTriangulo(){
+    var Z1= a+b;
+    var Z2= a+c;         
+    var Z3= b+c;
+        if (Z1 >= c ){
+    if (Z2 >= b){
+        if (Z3 >= a){
+document.write ("Verdadero");
+        } else{
+             document.write ("Falso");
+        }
+    } else{
+         document.write ("Falso");
+    } 
+ 
+
+} 
+  else {
+ document.write ("Falso");
+  } 
+              document.write('<p><a href="../index.html">Volver al index</a></p>');
+
+}
+        function pedirDatos(){
+            a = Number(prompt("Ingresar el primer valor"))
+            b= Number(prompt("Ingresar el segundo valor"))
+            c= Number(prompt("Ingresar el tercer valor"))
+
+            esTriangulo()
+        }
+
+        //-->
+        </script>
+    </head>
+    <body>
+       <h1> <center style="color:pink";>     INGRESE LOS VALORES </h1> </center>
+        <form>
+        <center> <input type="button" onclick="pedirDatos()" value="Call Function"> </center>
+        </form>
+  <p><a href="../index.html">Volver al index</a></p>
+
+
+    </body>
+</html>
