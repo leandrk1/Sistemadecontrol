@@ -31,24 +31,26 @@
             p = perimetro(a,b,c);
             z = area(a, b);
 
-            document.write ( "El valor de la hipotenusa es: ",c ); document.write ("<br/>");
-            document.write ( "El valor del perimetro es: ",p); document.write ("<br/>");
-            document.write ( "El valor del area es: ",z ); document.write ("<br/>"); 
+            document.write ( "La hipotenusa es: ",c ); document.write ("<br/>");
+            document.write ( "El perimetro es: ",p); document.write ("<br/>");
+            document.write ( "El area es: ",z ); document.write ("<br/>"); 
             document.write('<p><a href="../index.html">Volver al index</a></p>');
             
         }
 
         function perdirDatos(){
-            a = Number(prompt("Ingrese el valor del primer lado"))
-            b= Number(prompt("Ingrese el valor del segundo lado"))
+            a = Number(prompt("Ingresar el valor del primer lado"))
+            b= Number(prompt("Ingresame el valor del segundo lado"))
 
-            Resultado()
+            resultado()
         }
 
         //-->
         </script>
     </head>
     <body>
+       <h1> <center style="color:pink";> <p> INGRESE LOS VALORES </h1> </center>
+        <form>
         <center> <input type="button" onclick="perdirDatos()" value="INGRESE LOS DATOS"> </center>
         </form>
   <p><a href="../index.html">Volver al index</a></p>
