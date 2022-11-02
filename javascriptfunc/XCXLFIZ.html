@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        <!--
+
+        var R;
+        var L;
+        var C;
+        var F;
+        var dospi = Math.PI * 2;
+ 
+        function XL( F, L){
+        	ResultadoXL= dospi * F * L;
+    	return ResultadoXL;
+}	
+		function  XC(F,C){
+
+			ResultadoXC= 1/ (dospi * F * C);
+ 		return ResultadoXC;
+}
+
+ 		function square(x){
+        return x*x
+}
+		function Z(R,C,L,F){
+			CuadradoZ= (square(R) + square((XL(F,L)-XC(F,C))));
+			ResultadoZ= Math.sqrt (CuadradoZ);
+		return ResultadoZ;
+}
+		function fi(R,C,L,F){
+			Resultadofi=Math.atan (XL(F,L)-XC(F,C)/R);
+		return Resultadofi; 
+}
+        function pedirDatos(){
+            R = Number(prompt("Ingresar el valor de la resistencia"))
+            L= Number(prompt("Ingresar el valor de la inductancia"))
+            C= Number(prompt("Ingresar el valor de la capacitancia"))
+            F= Number(prompt("Ingresar el valor de la frecuencia"));
+					document.write (" Resultados: ");document.write ("<br/>");document.write ("<br/>");
+ 					document.write (" El valor de la reactancia capacitiva es: " +XC(F,C));document.write ("<br/>");document.write ("<br/>");
+ 			 		document.write (" El valor de la reactancia inductiva es: " +XL(F,L));document.write ("<br/>");document.write ("<br/>");
+ 			  	document.write (" El valor de la resistencia es: " +Z(R,C,L,F));document.write ("<br/>");document.write ("<br/>");
+ 			  	document.write ("El valor de FI es: " +fi(R,C,L,F));document.write ("<br/>");document.write ("<br/>");
+ 			  	document.write('<p><a href="../index.html">Volver al index</a></p>');document.write ("<br/>");document.write ("<br/>");
+}
+ </script>
+ </head>
+   	 <body>
+ <h1> <center style="color:pink";>  Ingrese el valor de R, C, F Y L  </h1> </center>
+      <form>
+ <center> <input type="button" onclick="pedirDatos()" value="Call Function"> </center>
+      </form>
+ <p><a href="../index.html">Volver al index</a></p>
+    </body>
+	</html>
